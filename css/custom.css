@@ -1,0 +1,47 @@
+/* 1) Body-Padding: Ausreichend Platz oberhalb schaffen */
+body {
+  font-family: 'Lexend', sans-serif;
+  padding-top: 80px; /* Platz für Navbar-Höhe + Margin */
+}
+
+/* 2) Überschriften-Font-Weights korrigieren */
+h1, h2 {
+  font-weight: 600;
+}
+h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+/* 3) Fixed-Header via .custom-navbar */
+.custom-navbar {
+  position: fixed;                    /* klebt die Leiste am Viewport-Top */
+  top: 0;                             /* ganz oben */
+  left: 0;                            /* links bündig */
+  width: calc(100% - 20px);           /* volle Breite abzüglich 2×10px Margin */
+  margin: 10px;                       /* rundherum 10px Abstand */
+  background-color: #0A0A80;         /* dein Dunkelblau */
+  border-radius: 5px;                 /* 5px Rundung */
+  z-index: 1030;                      /* über den meisten Inhalten */
+}
+
+/* 4) Rest deiner Utilities */
+.font-lexend {
+  font-family: 'Lexend', sans-serif;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.btn-extra-rounded {
+  border-radius: 50px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.hr-thick {
+  border: none;
+  border-top: 3px solid #0A0A80;
+  width: 5%;
+  margin: 3rem auto;
+}
